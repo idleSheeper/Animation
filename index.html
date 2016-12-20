@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Sheep Song</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flags/flags.css">
+</head>
+<body>
+  <div class="spike"></div>
+   <div class="anim">  
+        <div class="grass"></div>
+        <div class="sheep">
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="leg"></div>
+            <div class="body"></div>
+            <div class="head">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                    <div class="mouth"></div>
+            </div>            
+        </div>
+        
+    <!--Language choice-->
+        <form id="form" onchange="changeTextVersion()">
+            <label>    
+                <input type="radio" name="language" value="pl" checked><span><img src="flags/blank.gif" class="flag flag-pl" alt="Poland" />
+            </span></label>
+            <label>    
+                <input type="radio" name="language" value="eng"><span><img src="flags/blank.gif" class="flag flag-gb" alt="Uniked Kingdom" />
+            </span></label>
+            <label>    
+                <input type="radio" name="language" value="ger"><span><img src="flags/blank.gif" class="flag flag-de" alt="Germany" />
+            </span></label>
+            <label>    
+                <input type="radio" name="language" value="ger"><span><img src="flags/blank.gif" class="flag flag-fr" alt="France" />
+           </span> </label>
+            <label>    
+                <input type="radio" name="language" value="ger"><span><img src="flags/blank.gif" class="flag flag-it" alt="Italy" />
+           </span> </label>
+               <label>    
+                <input type="radio" name="language" value="ger"><span><img src="flags/blank.gif" class="flag flag-es" alt="Spain" />
+            </span></label>
+               <label>    
+                <input type="radio" name="language" value="ger"><span><img src="flags/blank.gif" class="flag flag-cz" alt="Czech Republic" />
+           </span> </label>
+            <label>    
+                <input type="radio" name="language" value="ger"><span><img src="flags/blank.gif" class="flag flag-ru" alt="Russian Federation" />
+            </span></label>
+        </form>
+        
+    <!--Song lyrics-->
+        <div id="pl" class="text">
+            <div class="line"><span>Jak </span><span>dobrze </span><span>byc </span><span>barankiem</span></div>
+            <div class="line"><span>i </span><span>wstawac </span><span>sobie </span><span>rankiem,</span></div>
+            <div class="line"><span>i </span><span>biegac </span><span>na </span><span>polanke</span></div>
+            <div class="line"><span>i </span><span>spiewac </span><span>sobie  </span><span>tak:</span> </div>     
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>niosa </span><span>mnie</span></div>
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>niosa </span><span>mnie!</span></div>
+        </div>
+        
+       <div id="eng" class="text">
+            <div class="line"><span>How </span><span>good </span><span>to be </span><span> baranek</span></div>
+            <div class="line"><span>and </span><span>wake up </span><span>sobie </span><span>ranek,</span></div>
+            <div class="line"><span>and </span><span>running </span><span>to </span><span> polanek,</span></div>
+            <div class="line"><span>and </span><span>singing </span><span>just </span><span>like that:</span> </div>
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>taking </span><span>me</span></div>
+            <div class="line bee"><span>be </span><span>be </span><span>be</span></div>
+            <div class="line bee"><span>kopytka </span><span>taking </span><span>me!</span></div>
+       </div>
+       
+        <div id="de" class="text"> 
+            <div class="line"><span>So </span><span>gut zu </span><span>sein </span><span> baranek</span></div>
+            <div class="line"><span>auf</span><span>steigen </span><span>sobie </span><span>ranek,</span></div>
+            <div class="line"><span>und </span><span>gehen </span><span>to </span><span>polanek,</span></div>
+            <div class="line"><span>und </span><span>singen </span><span>so wie </span><span>als:</span> </div>    
+            <div class="line bee"><span>bich </span><span>bich </span><span>bich</span></div>
+            <div class="line bee"><span>kopytka </span><span>tragen </span><span>mich</span></div>
+            <div class="line bee"><span>bich </span><span>bich </span><span>bich</span></div>
+            <div class="line bee"><span>kopytka </span><span>tragen </span><span>mich!</span></div>
+        </div>
+        
+        <div id="fr" class="text">
+            <div class="line"><span>C'est </span><span>bien </span><span>d'etre un </span><span> baranek</span></div>
+            <div class="line"><span>et</span><span>so berer </span><span>sobie </span><span>ranek,</span></div>
+            <div class="line"><span>et </span><span>courir </span><span>sur </span><span>polanek,</span></div>
+            <div class="line"><span>et </span><span>chanter </span><span>come </span><span>ca:</span> </div>    
+            <div class="line bee"><span>boit </span><span>boit </span><span>boit </span></div>
+            <div class="line bee"><span>kopytka </span><span>portent </span><span>moi </span></div>
+            <div class="line bee"><span>boit </span><span>boit </span><span>boit </span></div>
+            <div class="line bee"><span>kopytka </span><span>portent </span><span>moi! </span></div>          
+        </div>
+        
+        <div id="it" class="text">            
+            <div class="line"><span>Bene </span><span>essere </span><span>baranek</span></div>
+            <div class="line"><span>alzarsi </span><span>sobie </span><span>ranek,</span></div>
+            <div class="line"><span>corere </span><span>na </span><span>polanek,</span></div>
+            <div class="line"><span>e </span><span>cantare </span><span>me </span><span>si:</span></div>   
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>portano </span><span>me </span></div>
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>portano </span><span>me! </span></div>     
+        </div>
+        
+        <div id="es" class="text">
+            <div class="line"><span>Es </span><span>bueno </span><span>ser </span><span> baranek</span></div>
+            <div class="line"><span>Al</span><span>canzar </span><span>sobie </span><span>ranek,</span></div>
+            <div class="line"><span>Corir </span><span>na </span><span>polanek,</span></div>
+            <div class="line"><span>Y </span><span>cantarme </span><span>si:</span> </div>
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>portan </span><span>me </span></div>
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>portan </span><span>me! </span></div>     
+        </div>
+        <div id="cz" class="text">
+            <div class="line"><span>Jak </span><span>dobrze </span><span>byt </span><span> beranek</span></div>
+            <div class="line"><span>a </span><span>vstavat </span><span>brzy </span><span>ranek,</span></div>
+            <div class="line"><span>a </span><span>biezet </span><span>na </span><span>polanek,</span></div>
+            <div class="line"><span>a </span><span>zaspivat </span><span>si </span><span>tak:</span> </div>     
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>nesou </span><span>mne </span></div>
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>nesou </span><span>mne! </span></div>     
+        </div>
+        <div id="ru" class="text">
+            <div class="line"><span>Kak </span><span>choroszo </span><span>byt' </span><span>baranek</span></div>
+            <div class="line"><span>i </span><span>prosypat </span><span>sja kaAzdyj </span><span>ranek,</span></div>
+            <div class="line"><span>i </span><span>biezat' </span><span>na </span><span>polanek,</span></div>
+            <div class="line"><span>i </span><span>piet' </span><span>siebie </span><span>wot tak:</span> </div>    
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>niesut </span><span>mnie </span></div>
+            <div class="line bee"><span>be </span><span>be </span><span>be </span></div>
+            <div class="line bee"><span>kopytka </span><span>niesut </span><span>mnie! </span></div>     
+        </div>
+   </div>
+   
+        <footer>
+        <p>Created by: <a href="pan.d.borecki@o2.pl">Damian Borecki</a>.</p>
+        </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
